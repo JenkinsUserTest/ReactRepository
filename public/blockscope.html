@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<body>
+<script>
+
+    var i=10;//window.i
+    let j=20;//block scope
+        console.log("before if condition var value is:"+i);
+        console.log("before if condition let value is:"+j);
+    if(true){
+         i=45;//window.i=45
+        let j=45;
+        console.log("inside if var value is:"+i);
+        console.log("inside if let value is:"+j); 
+    }
+
+    console.log("after var value is:"+i);//window.i
+    console.log("after let value is:"+j);
+
+    </script>
+</body>
+</html>

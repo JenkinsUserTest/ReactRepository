@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<body>
+<script>
+class Employee{
+    constructor(empId,empName,empSalary,empDesignation){
+    this.empId=empId;
+    this.empName=empName;
+    this.empSalary=empSalary;
+    this.empDesignation=empDesignation;
+}
+empDetails(){
+    console.log("Employee Id:"+this.empId);
+    console.log("Employee Name:"+this.empName);
+    console.log("Employee Salary:"+this.empSalary);
+    console.log("Employee Designation:"+this.empDesignation);
+}
+}
+
+class Manager extends Employee{
+
+    managerId;
+    constructor(empId,empName,empSalary,empDesignation,managerId){
+        super(empId,empName,empSalary,empDesignation);
+        this.managerId=managerId;
+    }
+    empDetails(){
+        super.empDetails();
+        console.log("Manager id is:"+this.managerId);
+    }
+}
+
+//var employee=new Employee(1001,"Sabbir",34000,"Trainer");
+//employee.empDetails();
+var manager=new Manager(1001,"sabbir",45000,"Trainer",101);
+manager.empDetails();
+</script>
+</body>
+</html>

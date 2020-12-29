@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<body>
+<script>
+
+    sayHello=function(){
+        return "Hello";
+    }
+    var output=sayHello();
+    console.log("Output:"+output);
+
+    sayHelloArrow=()=>{
+        return "Hello";
+    }
+    console.log(sayHelloArrow());
+
+    sayHelloArrowParam=(val)=>{
+        return "Hello,"+val;
+    }
+    console.log(sayHelloArrowParam('sabbir'));
+
+    sayHelloArrowParamShorter=val=>"Hello"+val;
+    console.log(sayHelloArrowParamShorter('sabbir'));
+
+    </script>
+</body>
+</html>

@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<body>
+<script>
+
+    class Employee{
+
+    constructor(empId,empName,empSalary,empDesignation){
+        this.empId=empId;
+        this.empName=empName;
+        this.empSalary=empSalary;
+        this.empDesignation=empDesignation;
+    }
+  set empIdModify(newEmpId){
+      this.empId=newEmpId;
+  }
+   set empNameModify(newEmpName){
+      this.empName=newEmpName;
+  }
+  set empSalaryModify(newEmpSalary){
+      this.empSalary=newEmpSalary;
+  }
+  set empDesignationModify(newEmpDesignation){
+      this.empDesignation=newEmpDesignation;
+  }
+  get getEmployeeId(){
+      return this.empId;
+  }
+  
+  get getEmployeeName(){
+      return this.empName;
+  }
+    get getEmployeeSalary(){
+      return this.empSalary;
+  }
+    get getEmployeeDesignation(){
+      return this.empDesignation;
+  }
+
+}
+var employee=new Employee(1001,"sabbir",45000,"Trainer");
+employee.empIdModify=1002;
+employee.empNameModify="Shabbir";
+employee.empSalaryModify=34000;
+employee.empDesignationModify="Programmer";
+
+console.log("Employee Id:"+employee.getEmployeeId);
+console.log("Employee Name:"+employee.getEmployeeName);
+console.log("Employee Salary:"+employee.getEmployeeSalary);
+console.log("Employee Designation:"+employee.getEmployeeDesignation);
+
+    </script>
+</body>
+</html>
